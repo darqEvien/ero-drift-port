@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+@keyframes flash {
+  from { opacity: 0.85; }
+  to { opacity: 0; }
+}
