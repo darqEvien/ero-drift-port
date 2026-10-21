@@ -8,13 +8,13 @@ import { CYAN, PINK } from './palette'
 const neon = (c: string) => ({ textShadow: `0 0 10px ${c}, 0 0 28px ${c}88` })
 
 function start() {
-  startAudio()
+  startAudio().catch(() => {})
   setUi({ phase: 'drive' })
 }
 function go(id: string) {
   const s = stations.find((x) => x.id === id)
   if (!s) return
-  startAudio()
+  startAudio().catch(() => {})
   teleport(0, s.z + 22, Math.PI)
   setUi({ phase: 'drive', flash: getUi().flash + 1 })
 }

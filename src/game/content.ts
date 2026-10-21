@@ -2,11 +2,11 @@ import { CYAN, PINK, VIOLET, YELLOW } from './palette'
 
 // >>> Burayı kendi bilgilerinle doldur <<<
 export const profile = {
-  name: 'ADIN SOYADIN',
-  initials: 'AS',
-  role: 'Creative developer',
+  name: 'Eren Öntan',
+  initials: 'ERO',
+  role: 'Ananı siker',
   intro:
-    'Web, 3D ve interaktif deneyimler yapıyorum. Bu site de onlardan biri: arabayı sür, kapılardan geç, beni tanı.',
+    'Çok fena.',
 }
 
 export type Item = { title: string; desc: string; tags?: string[]; href?: string }
@@ -27,9 +27,9 @@ export const stations: Station[] = [
     label: 'Hakkımda',
     z: -250,
     color: PINK,
-    sub: 'Ben kimim',
+    sub: 'Ben sikerim',
     title: 'Hakkımda',
-    body: 'Kısa bir biyografi yaz: ne yapıyorsun, neye önem veriyorsun, şu an ne üzerinde çalışıyorsun. 2-3 cümle yeter.',
+    body: 'Sikiş yaparım.',
   },
   {
     id: 'projects',
